@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jqueryCss.css" />
+        <script src="template.js">
+        </script>
+  	<script src="jquery.imagesloaded.min.js"></script>
+		<script src="imgcache.js"></script>
+		<script src="jquery.js"></script>
+        <script src="jquerymobile.js">
+        </script>
+        <script src="Coments.js">
+        </script>
+        <!-- User-generated css -->
+        <style>
+        </style>
+        <!-- User-generated js -->
+        <script>
+            try {
+				
+
+				
+
+				} catch (error) {
+					console.error("Your javascript has an error: " + error);
+				}
+        </script>
+    </head>
+    <body>
+		<div id="pagLista" data-role="page" class="type-home">
+			<div data-role="header" data-position="top" data-theme="b" id="post">
+				<a class="ui-btn-left jqm-home ui-btn ui-btn-icon-notext ui-btn-corner-all ui-shadow ui-btn-up-b" data-rel="back" data-iconpos="notext" data-icon="home" title="Home" data-theme="b"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Home</span><span class="ui-icon ui-icon-home ui-icon-shadow" ></span></span></a>				
+				<script id="nombreUsuarioTmpl" type="text/x-jquery-tmpl">
+					<h2 align="center">Comentarios de ${usuario}</h2>
+				</script>
+			</div>
+			<div data-role="content">
+				<div class="content-primary"> 
+					<ul id="lstComents" data-role="listview" class="ui-listview">
+					</ul>
+					<script id="listComentariosTmpl" type="text/x-jquery-tmpl">
+						<li data-datos="${tipo}" data-json="${url}" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
+							<div class="ui-btn-inner ui-li" aria-hidden="true">
+								<div class="ui-btn-text">
+									<img src="${preview}" width="38" height="38" align="left">
+									<h3 class="ui-li-heading">${asunto}</h3>
+									<p class="ui-li-desc">${comentario}</p>
+								</div>
+							<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span></div>
+						</li>
+					</script>   
+				</div>
+			</div>
+			<div data-role="footer" data-theme="b" data-position="fixed">
+				<p> >>><<< </p>
+			</div>
+		</div>	
+		
+		
+		
+		
+		
+    </body>
+</html>
